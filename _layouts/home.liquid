@@ -50,9 +50,11 @@ layout: default
     {% assign video_file_exists = video_file_exists | strip %}
     <section class="home-stage" id="intro">
       <div class="stage">
+        {% assign badge_half = page.badges.size | plus: 1 | divided_by: 2 %}
         <div class="orbit-col orbit-left">
-          {% for badge in page.badges limit: 2 %}
-            <div class="orbit">
+          {% for badge in page.badges limit: badge_half %}
+            <div class="orbit {% if badge.value.size > 8 %}orbit-long{% endif %}">
+              {% if badge.icon %}<i class="orbit-icon {{ badge.icon }}" aria-hidden="true"></i>{% endif %}
               <span class="orbit-value">{{ badge.value }}</span>
               <span class="orbit-label">{{ badge.label }}</span>
             </div>
@@ -90,8 +92,9 @@ layout: default
         </div>
 
         <div class="orbit-col orbit-right">
-          {% for badge in page.badges offset: 2 limit: 2 %}
-            <div class="orbit">
+          {% for badge in page.badges offset: badge_half %}
+            <div class="orbit {% if badge.value.size > 8 %}orbit-long{% endif %}">
+              {% if badge.icon %}<i class="orbit-icon {{ badge.icon }}" aria-hidden="true"></i>{% endif %}
               <span class="orbit-value">{{ badge.value }}</span>
               <span class="orbit-label">{{ badge.label }}</span>
             </div>
@@ -197,7 +200,7 @@ layout: default
         <h2>Education</h2>
         <a href="{{ '/cv/' | relative_url }}">full CV <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
       </div>
-      <div class="edu-bar">
+      <div class="edu-bar" style="--edu-cols: {{ page.education.size }}">
         {% for edu in page.education %}
           <div class="edu-node {% if edu.current %}current{% endif %}">
             <div class="edu-period">{{ edu.period }}</div>
@@ -209,6 +212,9 @@ layout: default
           </div>
         {% endfor %}
       </div>
+      {% if page.education_footnote %}
+        <p class="edu-footnote">{{ page.education_footnote }}</p>
+      {% endif %}
     </section>
   {% endif %}
 

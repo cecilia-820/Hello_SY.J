@@ -41,10 +41,12 @@ badges:
     label: target inaccuracy
   - value: 14 nm
     label: FinFET tape-out
-  - value: PLL
-    label: digital feedback
-  - value: KAIST
-    label: M.S. 2025 –
+  - value: National STEM Scholar
+    label: Master's Excellence Scholarship
+    icon: fa-solid fa-graduation-cap
+  - value: Minister of Education Award
+    label: 1st, MCU competition
+    icon: fa-solid fa-award
 
 # ---------------------------------------------------------------------------
 # Two research cards (연구제목 + Figure)
@@ -110,10 +112,6 @@ strengths:
 # Education bar (학력)
 # ---------------------------------------------------------------------------
 education:
-  - period: 2021 – 2023
-    school: Duksung Women's University
-    degree: Biotechnology
-    note: Dean's scholarship, ranked 1st in first year
   - period: 2023 – Aug. 2025
     school: Hanyang University
     degree: B.S. Electrical Biomedical Engineering
@@ -123,6 +121,7 @@ education:
     degree: M.S. Graduate School of AI Semiconductor
     note: Advisor Prof. Wanyeong Jung · GPA 3.84 / 4.3
     current: true
+education_footnote: Transferred from Duksung Women's University (Biotechnology, Mar. 2021 – Feb. 2023; ranked 1st in the first year).
 
 # ---------------------------------------------------------------------------
 # Album of projects (이런 프로젝트, 앨범형) — pulled from _projects with this category
