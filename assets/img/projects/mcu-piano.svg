@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="34-key digital piano">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#4c1d95"/><stop offset="1" stop-color="#a855f7"/>
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M40 0 H0 V40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="800" height="600" fill="url(#g)"/>
+    <rect width="800" height="600" fill="url(#grid)"/>
+    <g transform="translate(400.0,250.0)" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+
+<rect x="-150" y="-70" width="300" height="140" rx="14"/>
+<g stroke-width="6">
+<line x1="-100" y1="-70" x2="-100" y2="70"/><line x1="-50" y1="-70" x2="-50" y2="70"/><line x1="0" y1="-70" x2="0" y2="70"/><line x1="50" y1="-70" x2="50" y2="70"/><line x1="100" y1="-70" x2="100" y2="70"/>
+</g>
+<g fill="#fff" stroke="none">
+<rect x="-118" y="-70" width="36" height="80"/><rect x="-68" y="-70" width="36" height="80"/><rect x="32" y="-70" width="36" height="80"/><rect x="82" y="-70" width="36" height="80"/>
+</g>
+<g fill="#fde68a" stroke="none">
+<circle cx="-120" cy="-100" r="8"/><circle cx="-80" cy="-100" r="8"/><circle cx="-40" cy="-100" r="8"/><circle cx="0" cy="-100" r="8"/><circle cx="40" cy="-100" r="8"/><circle cx="80" cy="-100" r="8"/><circle cx="120" cy="-100" r="8"/>
+</g>
+    </g>
+    <text x="400.0" y="508" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#fff">34-key digital piano</text>
+    <text x="400.0" y="548" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.85)">bare-metal MCU · 486 NeoPixels</text>
+    </svg>

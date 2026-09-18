@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="VR panoramic projection">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#881337"/><stop offset="1" stop-color="#fb7185"/>
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M40 0 H0 V40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="800" height="600" fill="url(#g)"/>
+    <rect width="800" height="600" fill="url(#grid)"/>
+    <g transform="translate(400.0,250.0)" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+
+<rect x="-150" y="-40" width="300" height="110" rx="40"/>
+<circle cx="-70" cy="15" r="28" fill="#fff"/><circle cx="70" cy="15" r="28" fill="#fff"/>
+<path d="M-20,50 q20,-30 40,0" stroke-width="8"/>
+<path d="M-190,-100 A210,210 0 0 1 190,-100" stroke="#fde68a" stroke-width="8" stroke-dasharray="18 12"/>
+    </g>
+    <text x="400.0" y="508" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#fff">VR panoramic projection</text>
+    <text x="400.0" y="548" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.85)">real-time · mobile platform</text>
+    </svg>

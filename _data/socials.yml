@@ -1,0 +1,8 @@
+# Social links shown in the search palette and the contact area.
+# See https://github.com/george-gca/jekyll-socials for all supported keys.
+cv_pdf: /assets/pdf/cv.pdf # path to your CV PDF file
+email: seoyoung_jang@kaist.ac.kr # your email address
+# linkedin_username: your-linkedin-id # uncomment and fill in to show a LinkedIn icon
+# github_username: cecilia-820 # uncomment to show a GitHub icon
+# scholar_userid: # your Google Scholar ID
+rss_icon: false

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="EMG prosthetic arm">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#134e4a"/><stop offset="1" stop-color="#2dd4bf"/>
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M40 0 H0 V40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="800" height="600" fill="url(#g)"/>
+    <rect width="800" height="600" fill="url(#grid)"/>
+    <g transform="translate(400.0,250.0)" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M-150,90 L-80,-10 L20,40 L120,-60"/>
+<circle cx="-150" cy="90" r="16" fill="#fff"/><circle cx="-80" cy="-10" r="16" fill="#fff"/><circle cx="20" cy="40" r="16" fill="#fff"/><circle cx="120" cy="-60" r="16" fill="#fff"/>
+<path d="M120,-60 L165,-95 M120,-60 L170,-55" stroke-width="8"/>
+<path d="M-160,-90 l14,0 l10,-30 l16,60 l14,-45 l10,15 l16,0" stroke="#fde68a" stroke-width="7"/>
+    </g>
+    <text x="400.0" y="508" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#fff">EMG prosthetic arm</text>
+    <text x="400.0" y="548" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.85)">ATmega128 signal processing</text>
+    </svg>

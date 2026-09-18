@@ -1,0 +1,285 @@
+---
+layout: default
+---
+<div class="home">
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Hero: "Hello, <name>" with responsive CV / Email quick actions -->
+  <!-- ------------------------------------------------------------------ -->
+  <section class="home-hero" id="hello">
+    {% if page.quick_actions %}
+      <nav class="quick-actions" aria-label="Quick actions">
+        {% for action in page.quick_actions %}
+          {% if action.url contains '://' or action.url contains 'mailto:' %}
+            {% assign action_href = action.url %}
+          {% else %}
+            {% assign action_href = action.url | relative_url %}
+          {% endif %}
+          <a
+            class="quick-action"
+            href="{{ action_href }}"
+            {% if action.external %}
+              target="_blank" rel="noopener noreferrer"
+            {% endif %}
+          >
+            <i class="{{ action.icon }}" aria-hidden="true"></i>
+            <span>{{ action.label }}</span>
+          </a>
+        {% endfor %}
+      </nav>
+    {% endif %}
+
+    <p class="hero-greeting">{{ page.hero.greeting }}</p>
+    <h1 class="hero-name">
+      {{ page.hero.name -}}
+      <span class="hero-dot">.</span>
+    </h1>
+    {% if page.hero.headline %}
+      <p class="hero-headline">{{ page.hero.headline }}</p>
+    {% endif %}
+    {% if page.hero.subline %}
+      <p class="hero-subline">{{ page.hero.subline }}</p>
+    {% endif %}
+    <div class="hero-bio">{{ content }}</div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Video stage with four orbit badges -->
+  <!-- ------------------------------------------------------------------ -->
+  {% if page.video %}
+    {% capture video_file_exists %}{% if page.video.file %}{% file_exists {{ page.video.file }} %}{% else %}false{% endif %}{% endcapture %}
+    {% assign video_file_exists = video_file_exists | strip %}
+    <section class="home-stage" id="intro">
+      <div class="stage">
+        <div class="orbit-col orbit-left">
+          {% for badge in page.badges limit: 2 %}
+            <div class="orbit">
+              <span class="orbit-value">{{ badge.value }}</span>
+              <span class="orbit-label">{{ badge.label }}</span>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="stage-video">
+          {% if video_file_exists == 'true' %}
+            <video
+              class="stage-media"
+              controls
+              playsinline
+              preload="metadata"
+              {% if page.video.poster %}
+                poster="{{ page.video.poster | relative_url }}"
+              {% endif %}
+              src="{{ page.video.file | relative_url }}"
+            ></video>
+          {% elsif page.video.embed %}
+            <iframe
+              class="stage-media"
+              src="{{ page.video.embed }}"
+              title="Intro video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          {% else %}
+            <img class="stage-media" src="{{ page.video.poster | relative_url }}" alt="Intro video placeholder">
+            <div class="stage-placeholder">
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+              <span>Intro video coming soon</span>
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="orbit-col orbit-right">
+          {% for badge in page.badges offset: 2 limit: 2 %}
+            <div class="orbit">
+              <span class="orbit-value">{{ badge.value }}</span>
+              <span class="orbit-label">{{ badge.label }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% if page.video.caption %}
+        <p class="stage-caption">{{ page.video.caption }}</p>
+      {% endif %}
+    </section>
+  {% endif %}
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Research cards: title + figure -->
+  <!-- ------------------------------------------------------------------ -->
+  {% if page.research %}
+    <section class="home-research" id="research">
+      <div class="home-section-head">
+        <h2>Research</h2>
+        <span class="head-note">what I am building right now</span>
+      </div>
+      <div class="research-grid">
+        {% for item in page.research %}
+          <article class="research-card">
+            <div class="research-figure">
+              <img src="{{ item.img | relative_url }}" alt="{{ item.title }}" loading="lazy">
+            </div>
+            <div class="research-body">
+              {% if item.eyebrow -%}
+                <span class="eyebrow">{{ item.eyebrow }}</span>
+              {%- endif %}
+              <h3>{{ item.title }}</h3>
+              {% if item.summary %}
+                <p>{{ item.summary }}</p>
+              {% endif %}
+              {% if item.points %}
+                <ul>
+                  {% for point in item.points %}
+                    <li>{{ point }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+              {% if item.tags %}
+                <div class="tags">
+                  {% for tag in item.tags -%}
+                    <span class="tag">{{ tag }}</span>
+                  {%- endfor %}
+                </div>
+              {% endif %}
+              {% if item.url %}
+                <a class="research-link" href="{{ item.url | relative_url }}"
+                  >Read more <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+                ></a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Process & strengths -->
+  <!-- ------------------------------------------------------------------ -->
+  {% if page.process or page.strengths %}
+    <section class="home-process" id="process">
+      <div class="home-section-head">
+        <h2>{{ page.process.title | default: 'How I work' }}</h2>
+        <span class="head-note">process and what I bring</span>
+      </div>
+      {% if page.process.steps %}
+        <ol class="process-steps">
+          {% for step in page.process.steps %}
+            <li class="step">
+              <span class="step-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+              <div class="step-icon"><i class="{{ step.icon }}" aria-hidden="true"></i></div>
+              <h4>{{ step.title }}</h4>
+              <p>{{ step.text }}</p>
+            </li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+      {% if page.strengths %}
+        <div class="strength-grid">
+          {% for s in page.strengths %}
+            <div class="strength">
+              <i class="{{ s.icon }}" aria-hidden="true"></i>
+              <h4>{{ s.title }}</h4>
+              <p>{{ s.text }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </section>
+  {% endif %}
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Education bar -->
+  <!-- ------------------------------------------------------------------ -->
+  {% if page.education %}
+    <section class="home-education" id="education">
+      <div class="home-section-head">
+        <h2>Education</h2>
+        <a href="{{ '/cv/' | relative_url }}">full CV <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+      </div>
+      <div class="edu-bar">
+        {% for edu in page.education %}
+          <div class="edu-node {% if edu.current %}current{% endif %}">
+            <div class="edu-period">{{ edu.period }}</div>
+            <div class="edu-school">{{ edu.school }}</div>
+            <div class="edu-degree">{{ edu.degree }}</div>
+            {% if edu.note %}
+              <div class="edu-note">{{ edu.note }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Projects album -->
+  <!-- ------------------------------------------------------------------ -->
+  {% if page.album %}
+    {% assign album_projects = site.projects | where: 'category', page.album.category | sort: 'importance' %}
+    {% if album_projects.size > 0 %}
+      <section class="home-album" id="projects">
+        <div class="home-section-head">
+          <h2>{{ page.album.title | default: 'Projects' }}</h2>
+          <a href="{{ '/projects/' | relative_url }}">all projects <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+        </div>
+        <div class="album-grid">
+          {% for project in album_projects limit: page.album.limit %}
+            <a class="album-tile" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+              <div class="album-img">
+                {% if project.img %}
+                  <img src="{{ project.img | relative_url }}" alt="{{ project.title }}" loading="lazy">
+                {% endif %}
+              </div>
+              <div class="album-body">
+                {% if project.period -%}
+                  <span class="album-period">{{ project.period }}</span>
+                {%- endif %}
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% endif %}
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Extra tiles (image style) -->
+  <!-- ------------------------------------------------------------------ -->
+  {% if page.extras and site.data.extras %}
+    <section class="home-extras" id="extras">
+      <div class="home-section-head">
+        <h2>{{ page.extras.title | default: 'Extra' }}</h2>
+        <span class="head-note">teaching, outreach and honors</span>
+      </div>
+      <div class="mosaic-grid">
+        {% for extra in site.data.extras %}
+          {% if extra.url %}<a class="mosaic-tile" href="{{ extra.url }}">{% else %}<div class="mosaic-tile">{% endif %}
+          <img src="{{ extra.img | relative_url }}" alt="{{ extra.title }}" loading="lazy">
+          <div class="mosaic-caption">
+            {% if extra.period -%}
+              <span class="mosaic-period">{{ extra.period }}</span>
+            {%- endif %}
+            <h3>{{ extra.title }}</h3>
+            {% if extra.caption %}
+              <p>{{ extra.caption }}</p>
+            {% endif %}
+          </div>
+          {% if extra.url %}</a>{% else %}</div>{% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Contact -->
+  <!-- ------------------------------------------------------------------ -->
+  <section class="home-contact" id="contact">
+    <div class="social">
+      <div class="contact-icons">{% social_links %}</div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
+  </section>
+</div>

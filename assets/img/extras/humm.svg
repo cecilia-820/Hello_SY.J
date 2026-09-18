@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="High-school lectures">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#0c4a6e"/><stop offset="1" stop-color="#38bdf8"/>
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M40 0 H0 V40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="800" height="800" fill="url(#g)"/>
+    <rect width="800" height="800" fill="url(#grid)"/>
+    <g transform="translate(400.0,350.0)" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+
+<rect x="-160" y="-100" width="320" height="170" rx="14"/>
+<path d="M-120,-40 l40,40 l40,-60 l40,50 l60,-70" stroke="#fde68a" stroke-width="8"/>
+<circle cx="0" cy="120" r="26"/><path d="M-50,190 q50,-60 100,0"/>
+    </g>
+    <text x="400.0" y="708" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#fff">High-school lectures</text>
+    <text x="400.0" y="748" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.85)">13 schools across Korea</text>
+    </svg>

@@ -1,0 +1,26 @@
+# Image-style tiles for the "Beyond the lab" section on the home page.
+# Replace `img` with a photo (jpg/png) whenever you have one.
+- title: President, Hanyang Prestigious Network
+  caption: Alumni network for overseas Ph.D. admissions. Mentoring 14 students on SOPs, CVs, faculty outreach and interviews.
+  period: Mar. 2026 –
+  img: assets/img/extras/hpn.svg
+- title: Major lectures for high-school students
+  caption: One-hour lectures on electronic-biomedical engineering research at 13 high schools across Korea (HUMM, 30 hrs).
+  period: 2024
+  img: assets/img/extras/humm.svg
+- title: Tutor for international students
+  caption: Taught Probability and Statistics in English to international students at the College of Engineering (30 hrs).
+  period: Apr. – Jun. 2024
+  img: assets/img/extras/tutoring.svg
+- title: Cultural-exchange mentor
+  caption: Taught Korean language and culture to international students at the Institute of International Education (30 hrs).
+  period: Sep. – Nov. 2024
+  img: assets/img/extras/mentor.svg
+- title: Volunteer art instructor
+  caption: Supported children with autism spectrum disorder in art activities (Seoul Metropolitan Government – Hanyang program, 30 hrs).
+  period: Jul. – Aug. 2024
+  img: assets/img/extras/art.svg
+- title: Scholarships & honors
+  caption: National STEM Master's Excellence Scholarship, SeAH Haiam full scholarship, Graduation Excellence Award (GPA 4.0+), 6 consecutive High-Honors semesters.
+  period: 2020 – 2026
+  img: assets/img/extras/honors.svg

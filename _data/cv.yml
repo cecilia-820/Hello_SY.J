@@ -1,0 +1,211 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Seoyeong Jang
+    - name: Position
+      value: M.S. student, KAIST Graduate School of AI Semiconductor · EECE Ph.D. applicant
+    - name: Advisor
+      value: Prof. Wanyeong Jung
+    - name: Location
+      value: Daejeon, South Korea
+    - name: Email
+      value: seoyoung_jang@kaist.ac.kr
+
+- title: Research Interests
+  type: list
+  contents:
+    - Ultra-low-power and energy-efficient mixed-signal ICs
+    - Reference-free and fully synthesizable sensors
+    - PLL-based digital feedback
+    - Digital-assisted analog circuits
+    - Circuit design automation
+
+- title: Education
+  type: time_table
+  contents:
+    - title: M.S. in AI Semiconductor
+      institution: KAIST, Graduate School of AI Semiconductor, Daejeon, Korea
+      year: Sep. 2025 – present
+      description:
+        - "Advisor: Prof. Wanyeong Jung"
+        - GPA 3.84 / 4.3
+    - title: B.S. in Electrical Biomedical Engineering
+      institution: Hanyang University, Seoul, Korea
+      year: Mar. 2023 – Aug. 2025
+      description:
+        - GPA 4.25 / 4.5, Summa Cum Laude
+        - Transferred from Duksung Women's University (Biotechnology, Mar. 2021 – Feb. 2023)
+
+- title: Current Research — M.S. Thesis
+  type: time_table
+  contents:
+    - title: Reference-Free Supply-Locked Ring-Oscillator Temperature Sensor (main research)
+      institution: KAIST, Daejeon, Korea
+      year: 2025 – present
+      description:
+        - Target ±0.1 °C inaccuracy over −40 to 125 °C; power and area to be reported after measurement.
+        - Designed a custom standard-cell-based 2-stack LVT ring oscillator as the reference clock. A PLL-based feedback loop maintains a constant shared supply voltage for the LVT and HVT ring oscillators, and temperature is measured from their frequency ratio.
+        - Performed end-to-end analog and digital IC design, from transistor-level design to DRC/LVS-clean layout and system-level loop/noise analysis.
+        - title: Samsung 14nm FinFET tape-out in progress (GDS Nov. 2026); first-author paper in preparation (ISSCC 2028).
+          contents:
+            - "Cadence flow: Genus, Innovus, Xcelium, SimVision, Tempus, Voltus, Pegasus"
+    - title: Research Plugin and Skills for Circuit-Paper Analysis (sub-project)
+      institution: KAIST, Daejeon, Korea
+      year: 2026 – present
+      description:
+        - Participating in the development of a lab-wide Codex research plugin for paper discovery, structured analysis, evidence extraction and research-workspace management.
+        - Responsible for the RAG and retrieval component, using keyword, semantic, schematic-topology, functional and behavioral representations to retrieve related circuit techniques across different figures and terminology.
+
+- title: Publications
+  type: list
+  contents:
+    - Sunghwan Kim*, <b>Seoyeong Jang</b>, Rakesh Kumar Jha, Juwan Choi, "Naturally Derived Luminescent Material in Engineered Silk and Its Application as a Fluorescent Dye with a Large Stokes Shift and Sensing Capability," <i>ACS Biomaterials Science &amp; Engineering</i>, vol. 10, no. 7, pp. 4552–4561, 2024. (IF 5.4, JIF rank 15/53) <a href="https://doi.org/10.1021/acsbiomaterials.4c00793" target="_blank">doi:10.1021/acsbiomaterials.4c00793</a>
+
+- title: Research Internships
+  type: time_table
+  contents:
+    - title: Undergraduate Researcher, Kwon Research Group (Prof. Kyeong-Ha Kwon)
+      institution: KAIST, Daejeon, Korea
+      year: Jan. – Feb. 2025
+      description:
+        - Designed a low-noise amplifier for electrochemical impedance spectroscopy (EIS) in a high-voltage battery-monitoring IC (BMIC) using systematic g<sub>m</sub>/I<sub>D</sub> sizing in Cadence Virtuoso.
+    - title: Undergraduate Researcher, Laboratory for Semiconductor System (Prof. Hoi-Jun Yoo)
+      institution: PIM Semiconductor Design Research Center, KAIST, Daejeon, Korea
+      year: Jun. – Aug. 2024
+      description:
+        - Implemented real-time 3-D panoramic image projection for VR and optimized it for real-time computation on a mobile platform (Android/Java, PyTorch).
+    - title: Undergraduate Researcher, Laboratory for Advanced Biomaterials & Biodevices (Prof. Sung-Hwan Kim)
+      institution: Hanyang University, Seoul, Korea
+      year: Jun. 2023 – May 2024
+      description:
+        - Researched graphene/CNF E-tattoos for non-invasive drug delivery; won the Outstanding Research Award from the Dean of Biomedical Engineering.
+        - Researched biomedical applications and optical characteristics of silk-protein biomaterials; presented a poster at the 2023 Fall Meeting of the Korean Society of Medical & Biological Engineering; published in ACS Biomaterials Science & Engineering (IF 5.4).
+
+- title: Scholarships & Honors
+  type: time_table
+  contents:
+    - year: 2025.11 –
+      items:
+        - National STEM Master's Excellence Scholarship, Korea Student Aid Foundation ($3,500/year)
+    - year: 2025.08
+      items:
+        - Graduation Excellence Award from the University President (GPA 4.0+), Hanyang Univ.
+    - year: 2025.05
+      items:
+        - Achievement Award from the University President, 86th Anniversary Ceremony, Hanyang Univ.
+    - year: 2023 – 2025
+      items:
+        - SeAH Haiam Academic Scholarship, SeAH Haiam Scholarship Foundation (full tuition and stipend)
+        - Semester High Honors, 6 consecutive semesters, Hanyang Univ. (2023.06 – 2025.12)
+    - year: 2020.06
+      items:
+        - College Dean's Scholarship for highest academic standing in 1st year (ranked 1st), Duksung Women's Univ.
+
+- title: Awards
+  type: time_table
+  contents:
+    - year: 2025.06
+      items:
+        - 3rd, Excellence Award (Univ. President), Running Pacemaker (Bio-Analog Circuit Tutor), Hanyang Univ.
+    - year: 2025.05
+      items:
+        - 3rd, Excellence Award, ICT Convergence Project Competition, Device-mart (Korea)
+    - year: 2025.01
+      items:
+        - 1st, Grand Award (Univ. President), Hanyang Academic Conference, Hanyang Univ.
+    - year: 2024.11
+      items:
+        - 1st, Minister of Education Award, Microcontroller Application Competition, Seoul National Univ.
+    - year: 2024.10
+      items:
+        - Best Question Award (Univ. President), ASKTON (ASK + HACKATHON), Hanyang Univ.
+    - year: 2024.06
+      items:
+        - 2nd, Outstanding Research Award, Capstone Design Poster Presentation, Hanyang Univ.
+    - year: 2021.02
+      items:
+        - 1st, Grand Award (Univ. President), Computational Thinking Convergence Competition, Duksung Women's Univ.
+
+- title: Project Experience
+  type: time_table
+  contents:
+    - title: COSS Next-Generation Semiconductor MCU Application Competition — Team Leader
+      institution: Microcontroller Application Competition, Seoul National University (POLARIS)
+      year: Nov. 2024
+      description:
+        - Built a bare-metal embedded 34-key digital piano; flashed firmware directly via USBasp.
+        - Stored LED control data in flash using PROGMEM, enabling updates for 486 NeoPixels per timer interval, over 10× more than other teams, while maintaining simultaneous animation and piano playback under tight MCU memory constraints.
+        - Won the Minister of Education Award; received the Achievement Award at Hanyang's Foundation Day Ceremony.
+    - title: Low-Cost Eye-Drawing Platform Using MCU-Based Electrooculography (EOG) — Team Leader
+      institution: Hanyang Academic Conference, Hanyang University
+      year: May – Nov. 2024
+      description:
+        - Designed and built the analog front end for EOG measurement and a MATLAB algorithm mapping EOG signals to drawing movements.
+        - Won the Grand Award (Hanyang Academic Conference) and the Best Question Award (ASKTON) from the University President.
+    - title: EMG-Based Prosthetic Arm Using MCU — Team Leader
+      institution: Term Project, Digital Engineering Course, Hanyang University
+      year: Apr. – Jun. 2024
+      description:
+        - Filtered and feature-extracted EMG/EOG signals on an ATmega128 and mapped them to prosthetic-limb movements.
+
+- title: Teaching & Outreach
+  type: time_table
+  contents:
+    - title: President, Hanyang Prestigious Network (HPN)
+      institution: Alumni network for overseas Ph.D. admissions, Hanyang University
+      year: Mar. 2026 – present
+      description:
+        - Mentor 14 students on SOPs, CVs, faculty outreach and interviews; organizing the university-wide information session on overseas graduate admissions (May 2027).
+    - title: Hanyang University Major Manager (HUMM) for High School Students
+      institution: Admissions Office, Hanyang University
+      year: Jan. – Dec. 2024
+      description:
+        - Delivered one-hour lectures on electronic-biomedical engineering research at 13 high schools across Korea; certificate of completion from the University President (30 hrs).
+    - title: Tutor, Major-Course Tutoring for International Students
+      institution: College of Engineering, Hanyang University
+      year: Apr. – Jun. 2024
+      description:
+        - Taught a "Probability and Statistics" course in English to international students (30 hrs).
+    - title: Mentor, Cultural Exchange for International Students
+      institution: Institute of International Education, Hanyang University
+      year: Sep. – Nov. 2024
+      description:
+        - Taught Korean language and culture to international students (30 hrs).
+    - title: Volunteer Art Instructor for Children with Autism Spectrum Disorder
+      institution: Seoul Metropolitan Government – Hanyang University Art Education Support Program
+      year: Jul. – Aug. 2024
+      description:
+        - Supported students in art activities and encouraged participation (30 hrs).
+
+- title: Skills
+  type: list_groups
+  contents:
+    - category: Analog / mixed-signal
+      icon: fa-solid fa-microchip
+      items:
+        - name: Cadence Virtuoso
+          level: transistor-level design, layout, DRC/LVS
+        - name: Spectre / loop & noise analysis
+          level: PLL loops, ring oscillators, LNAs
+    - category: Digital flow
+      icon: fa-solid fa-diagram-project
+      items:
+        - name: Cadence
+          level: Genus, Innovus, Xcelium, SimVision, Tempus, Voltus, Pegasus
+        - name: Synopsys
+          level: Design Compiler, VCS, Verdi, IC Compiler II, PrimeTime, Calibre
+    - category: Embedded & software
+      icon: fa-solid fa-code
+      items:
+        - name: MCU firmware
+          level: ATmega128, bare-metal C, USBasp
+        - name: Python / PyTorch / MATLAB
+          level: signal processing, RAG & retrieval pipelines
+    - category: Languages
+      icon: fa-solid fa-language
+      items:
+        - name: Korean
+          level: native
+        - name: English
+          level: professional (taught courses in English)

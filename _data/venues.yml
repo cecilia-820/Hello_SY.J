@@ -1,0 +1,8 @@
+# Venue abbreviations used by the `abbr` field in _bibliography/papers.bib
+"ACS BSE":
+  url: https://pubs.acs.org/journal/abseba
+  color: "#00369f"
+
+"KOSOMBE":
+  url: https://www.kosombe.or.kr/
+  color: "#009f36"
