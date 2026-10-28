@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-label="Circuit-paper analysis pipeline">
+
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+  </marker>
+  <marker id="arrp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/>
+  </marker>
+</defs>
+<rect width="800" height="440" rx="16" fill="#f8fafc"/>
+<text x="24" y="34" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Research plugin for circuit-paper analysis</text>
+<text x="24" y="54" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">find the same technique across different figures, names and notation</text>
+<rect x="30" y="120" width="125" height="76" rx="10" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+<text x="92.5" y="156.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Circuit papers</text>
+<text x="92.5" y="175.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#475569">PDF · figures · text</text><line x1="155" y1="158" x2="185" y2="158" stroke="#334155" stroke-width="2" marker-end="url(#arr)"/><rect x="185" y="120" width="125" height="76" rx="10" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+<text x="247.5" y="156.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Extraction</text>
+<text x="247.5" y="175.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#475569">figure + body text</text><line x1="310" y1="158" x2="340" y2="158" stroke="#334155" stroke-width="2" marker-end="url(#arr)"/><rect x="340" y="120" width="125" height="76" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.8"/>
+<text x="402.5" y="156.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Representations</text>
+<text x="402.5" y="175.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#475569">5 complementary views</text><line x1="465" y1="158" x2="495" y2="158" stroke="#334155" stroke-width="2" marker-end="url(#arr)"/><rect x="495" y="120" width="125" height="76" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.8"/>
+<text x="557.5" y="156.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Retrieval index</text>
+<text x="557.5" y="175.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#475569">RAG · fused ranking</text><line x1="620" y1="158" x2="650" y2="158" stroke="#334155" stroke-width="2" marker-end="url(#arr)"/><rect x="650" y="120" width="125" height="76" rx="10" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+<text x="712.5" y="156.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Structured analysis</text>
+<text x="712.5" y="175.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#475569">evidence · workspace</text>
+<rect x="330" y="104" width="300" height="108" rx="14" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="480" y="98" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#7c3aed">my part: multi-view retrieval</text>
+<line x1="402" y1="196" x2="402" y2="240" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 4"/>
+<rect x="265" y="250" width="72.4" height="28" rx="14" fill="#fff" stroke="#7c3aed"/><text x="301.2" y="269" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#5b21b6">keyword</text><rect x="347.4" y="250" width="79.6" height="28" rx="14" fill="#fff" stroke="#7c3aed"/><text x="387.2" y="269" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#5b21b6">semantic</text><rect x="437.0" y="250" width="151.6" height="28" rx="14" fill="#fff" stroke="#7c3aed"/><text x="512.8" y="269" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#5b21b6">schematic topology</text><rect x="598.6" y="250" width="94.0" height="28" rx="14" fill="#fff" stroke="#7c3aed"/><text x="645.6" y="269" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#5b21b6">functional</text><rect x="702.6" y="250" width="94.0" height="28" rx="14" fill="#fff" stroke="#7c3aed"/><text x="749.6" y="269" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#5b21b6">behavioral</text>
+<rect x="60" y="320" width="680" height="80" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<text x="400" y="348" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Example</text>
+<text x="400" y="370" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#334155">"supply-locked oscillator" and "voltage-regulated ring oscillator" are retrieved together</text>
+<text x="400" y="388" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#334155">because their topology, function and loop behavior match even though their figures differ.</text>
+</svg>

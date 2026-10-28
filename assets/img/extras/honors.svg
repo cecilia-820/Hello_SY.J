@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Scholarships &amp; honors">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#1e1b4b"/><stop offset="1" stop-color="#6366f1"/>
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M40 0 H0 V40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="800" height="800" fill="url(#g)"/>
+    <rect width="800" height="800" fill="url(#grid)"/>
+    <g transform="translate(400.0,350.0)" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M-60,-150 L-20,-40 M60,-150 L20,-40" stroke-width="12"/>
+<path d="M-90,-150 h60 l-40,110 M90,-150 h-60 l40,110" stroke-width="12"/>
+<circle cx="0" cy="40" r="90"/>
+<path d="M0,-20 l18,36 40,6 -29,28 7,40 -36,-19 -36,19 7,-40 -29,-28 40,-6 Z" fill="#fde68a" stroke="none"/>
+    </g>
+    <text x="400.0" y="708" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#fff">Scholarships &amp; honors</text>
+    <text x="400.0" y="748" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.85)">national STEM · full scholarship</text>
+    </svg>
